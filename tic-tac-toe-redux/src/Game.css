@@ -1,0 +1,98 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+ol, ul {
+  padding-left: 30px;
+  list-style: none;
+}
+
+
+#root {
+      width: 360px;
+      margin: auto;
+
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  font-size: 14px;
+  transition:0.3s;
+}
+
+.winner{
+  color: #5da1e4;
+  font-size: 25px;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 60px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 60px;
+  transition: 1.3s;
+  box-shadow: 1px 0px 11px 2px #9af1d7;
+}
+.square:hover{
+  background: #b1d0ee;
+  border: 3px solid rgb(0, 189, 110);
+
+}
+.squareW {
+  background: dodgerblue;
+  font-size: 28px;
+  color: antiquewhite;
+}
+.squareA {
+  margin-right: 4px;
+  margin-top: 4px;
+}
+li .current{
+  padding: 8px;
+  background: rgb(91, 180, 176);
+}
+.square:focus {
+  outline: none;
+}
+.travel {
+  background: rgb(99, 167, 217);
+  color:white;
+  padding: 4px;
+  margin-top: 2px;
+  border-radius: 6px;
+  border:none;
+  transition:0.3s;
+  cursor: pointer;
+}
+
+.travel:active{
+  background: rgb(15, 98, 146);
+}
+
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+}
